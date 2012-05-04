@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal">
+
+<EditText android:text="Text to play"  
+android:id="@+id/EditTextToPlay" android:layout_width="fill_parent"
+android:layout_height="wrap_content"></EditText>
+
+<Button android:text="Play" android:id="@+id/ButtonPlay" 
+android:layout_height="50dp" android:layout_width="fill_parent"></Button>
+
+<Button android:text="Listen" android:id="@+id/ButtonListen" 
+android:layout_height="50dp" android:layout_width="fill_parent"></Button>
+
+<LinearLayout 
+	android:id="@+id/LinearLayout01" 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" 
+	android:layout_alignParentBottom="true"
+	android:gravity="center_vertical|center_horizontal">
+    
+    <RadioButton android:id="@+id/RadioPlaying" android:text="Playing" 
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:clickable="false"></RadioButton>
+	
+	<RadioButton android:id="@+id/RadioListening" android:text="Listening" 
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:clickable="false"></RadioButton>
+    
+    <RadioButton android:id="@+id/RadioHelping" android:text="Helping" 
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:clickable="false"></RadioButton>
+	
+</LinearLayout>
+
+<LinearLayout 
+	android:id="@+id/LinearLayout02" 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" 
+	android:layout_alignParentBottom="true"
+	android:gravity="center_vertical|center_horizontal">
+
+	<RadioButton android:id="@+id/RadioSOS" android:text="S.O.S." 
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:clickable="false"></RadioButton>
+    
+    <RadioButton android:id="@+id/RadioFinished" android:text="Finished" 
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:clickable="false"></RadioButton>
+
+</LinearLayout>
+
+<TextView android:text="" android:id="@+id/TextStatus" 
+android:layout_width="fill_parent" android:layout_height="wrap_content" android:textSize="25dp"
+android:gravity="left"></TextView>
+
+<TextView android:text="" android:id="@+id/TextListen" 
+android:layout_width="fill_parent" android:layout_height="wrap_content" android:textSize="25dp"
+android:gravity="left"></TextView>
+
+</LinearLayout>
